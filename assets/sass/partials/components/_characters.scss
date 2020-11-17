@@ -1,0 +1,92 @@
+.slider {
+    svg {
+        .circulo {
+            .cuerpo {
+                fill: #7fe6fd;
+                stroke: #000;
+                stroke-width: 2;
+                fill-opacity: 0;
+                stroke-dasharray: 384px;
+                stroke-dashoffset: 384px;
+                animation: desappear_body_circle 2s ease-in-out 3.5s forwards;
+            }
+            .piernas {
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: scale(0);
+                animation: desappear_legs 1s ease-in-out 3500ms forwards;
+            }
+            .ojos,
+            .boca {
+                fill: #000;
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: translateY(50px);
+                animation: desappear_face 1s  ease-in-out 3500ms forwards;
+            }
+        }
+
+        .player {
+            .cuerpo {
+                fill: #fc5cbc;
+                stroke: #000;
+                stroke-width: 2;
+                fill-opacity: 0;
+                stroke-dasharray: 463px;
+                stroke-dashoffset: 463px;
+                animation: desappear_body_player 2s ease-in-out 3.5s forwards;
+            }
+            .piernas {
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: scale(0);
+                animation: desappear_legs 1s  ease-in-out 3500ms forwards;
+            }
+            .ojos,
+            .boca {
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: translateY(50px);
+                animation: desappear_face 1s  ease-in-out 3500ms forwards;
+            }
+        }
+
+        .opponent {
+            .cuerpo {
+                fill: #77f9da;
+                stroke: #000;
+                stroke-width: 2;
+                fill-opacity: 0;
+                stroke-dasharray: 398px;
+                stroke-dashoffset: 398px;
+                animation: desappear_body_opponent 2s ease-in-out 3.5s forwards;
+            }
+            .piernas {
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: scale(0);
+                animation: desappear_legs 1s  ease-in-out 3500ms forwards;
+            }
+            .ojos {
+                fill: #000;
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: translateY(50px);
+                animation: desappear_face 1s  ease-in-out 3500ms forwards;
+            }
+            .boca {
+                stroke: #000;
+                stroke-width: 2;
+                opacity: 0;
+                transform: translateY(50px);
+                animation: desappear_face 1s  ease-in-out 3500ms forwards;
+            }
+        }
+    }
+}

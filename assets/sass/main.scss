@@ -1,0 +1,35 @@
+@import "lib/vars";
+@import "lib/reboot";
+@import "lib/keyframes";
+
+@import "lib/colors";
+@import "lib/typo";
+@import "lib/utils";
+
+@import "partials/components/characters";
+@import "partials/components/buttons";
+@import "partials/components/toggle";
+@import "partials/components/splash";
+
+@import "partials/pages/layout";
+@import "partials/pages/modals";
+@import "partials/pages/menu";
+@import "partials/pages/game";
+@import "partials/pages/board";
+@import "partials/pages/settings";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
+
+
+
+/** {
+    &:not(a) {
+        border: 1px solid pink;
+    }
+}*/
+
+* {
+    h1 {font-family: 'Righteous', cursive;font-size: $base*4; color: #6D6B6B;}
+    h2 {font-family: 'Righteous', cursive;font-size: $base*2.5; color: #6D6B6B;}
+    h3 {font-family: 'Righteous', cursive;font-size: $base*2; color: #6D6B6B;}
+}

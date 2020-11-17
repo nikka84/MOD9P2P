@@ -1,0 +1,41 @@
+#main_page {
+    display: flex;
+    flex-direction: column;
+
+    .ui {
+        margin: 0 0 $base * 4;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        
+        .mdi.mdi-cards-heart {
+            &::before {
+                color: #fc5cbc;
+            }
+        }
+        .mdi.mdi-star {
+            &::before {
+                color: #7fe6fd;
+            }
+        }
+    }
+
+    .game {
+        position: relative;
+        flex-basis: 100%;
+        width: 100%;
+
+        .Player {
+            touch-action: none;
+            user-select: none;
+        }
+
+        .Opponent {
+            animation: rotation 3s infinite linear;
+            -webkit-animation: rotation 3s infinite linear;
+        }
+    }
+}

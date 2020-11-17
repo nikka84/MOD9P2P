@@ -1,0 +1,53 @@
+#leaderboard_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        padding: $base * 2 0;
+        flex: 0 0 auto;
+        width: 100%;
+        // text-align: center;
+    }
+
+    .main {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .footer {
+        padding: $base * 2;
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hscore {
+        margin-bottom: $base * 4;
+        width: 100%;
+
+        .main {
+            font-size: $base * 8;
+            line-height: $base * 8;
+            color: #fc5cbc;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .lboard {
+        flex: 1 1 100%;
+        width: 100%;
+        .lboard_item {
+            display: flex;
+            justify-content: space-between;
+            .lboard_item_name {
+                text-indent: 1.5rem;
+                line-height: 2rem; 
+            }
+            .lboard_item_p {
+                font-size: $base*2;
+            }
+        }
+    }
+}

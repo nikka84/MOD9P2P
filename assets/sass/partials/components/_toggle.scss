@@ -1,0 +1,28 @@
+.toggle {
+    height: $base * 2.5;
+    width: $base * 4.5;
+    border: 2px solid #666;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    margin: 0;
+    padding: 0;
+
+    &.on {
+        border: 2px solid #77f9da;
+        transition: all 200ms ease;
+
+        span.mdi.mdi-checkbox-blank-circle {
+            margin-top: -9px;
+            transform: translate(1px, 5px) scale(-0.80);
+            transition: all 200ms ease;
+                color: #77f9da;         
+        }
+    }
+
+    span {
+        margin-top: -9px;
+        transform: translate(-13px, 5px) scale(-0.80);
+        display: block;
+        transition: all 200ms ease;
+    }
+}

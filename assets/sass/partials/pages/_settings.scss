@@ -1,0 +1,47 @@
+#settings_page {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        padding: $base * 2 0;
+        flex: 1 1 auto;
+        width: 100%;
+
+    }
+
+    .main {
+        padding: 0px 30px;
+        flex: 1 1 60%;
+        width: 100%;
+
+        .setting {
+            display: flex;
+            align-items: center;
+            margin-bottom: $base * 4;
+
+            .setting_icon {
+                flex: 0 0 auto;
+                margin-right: $base * 2;
+            }
+
+            .setting_label {
+                flex: 1 1 100%;
+                font-family: 'Roboto', sans-serif;
+                font-size: $base*2;
+            }
+
+            .setting_toggle {
+                flex: 0 0 auto;
+            }
+        }
+    }
+
+    .footer {
+        padding: $base * 2;
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,86 @@
+//Animación para hacer rotar al oponente
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+//Animaciones para hacer reaparecer los svg de los caracteres
+@keyframes desappear_body_circle {
+    from {
+        fill-opacity: 0;
+        stroke-dasharray: 384px;
+        stroke-dashoffset: 384px;
+    }
+
+    to {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes desappear_body_player {
+    from {
+        fill-opacity: 0;
+        stroke-dasharray: 463px;
+        stroke-dashoffset: 463px;
+    }
+
+    to {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes desappear_body_opponent {
+    from {
+        fill-opacity: 0;
+        stroke-dasharray: 398px;
+        stroke-dashoffset: 398px;
+    }
+
+    to {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes desappear_face {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes desappear_legs {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+//Animación para hacer temblar el splash inicial
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
